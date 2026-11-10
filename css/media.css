@@ -1,0 +1,60 @@
+
+
+
+
+}
+
+@media (max-width: 992px) {
+
+    .contanir-grad {
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: auto !important;
+    }
+
+    .side-bar {
+        display: none !important;
+    }
+
+    .contanir-grad > * {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .navbar,
+    .table {
+        grid-column: 1 / -1 !important;
+     }
+
+}
+
+
+@media (max-width: 596px) {
+
+    .side-bar{display: none;}
+    .contanir-grad {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+        margin: 10px auto !important;
+    }
+
+    .contanir-grad > * {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .visa-card {
+        max-width: 100% !important;
+    }
+
+    .container-table {
+        overflow-x: auto !important;
+    }
+
+    .table-header,
+    .table-row {
+        min-width: 600px !important;
+    }
+
+}
